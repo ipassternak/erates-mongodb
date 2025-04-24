@@ -13,6 +13,7 @@ This project is licensed under the [MIT License](LICENSE).
 **or:**
   - Python 3.12
   - Node.js 20
+  - Mongodb
 
 ## Local Startup
 
@@ -21,11 +22,7 @@ This project is licensed under the [MIT License](LICENSE).
     ```bash
     git clone https://github.com/ipassternak/erates.git
     ```
-2. Create the database file:  
-   ```bash
-   touch app/db/app.db
-   ```
-3. Start the application:  
+2. Start the application:  
    ```bash
    docker-compose up -d
    ```
@@ -35,10 +32,7 @@ This project is licensed under the [MIT License](LICENSE).
     ```sh
     git clone https://github.com/ipassternak/erates.git
     ```
-2. Create the database file:  
-   ```bash
-   touch app/db/app.db
-   ```
+2. Set appropriate `DATABASE_URL` env
 3. Build the client:  
    ```bash
    cd client
